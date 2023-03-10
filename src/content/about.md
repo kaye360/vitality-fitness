@@ -2,10 +2,16 @@
 title: About Vitality Fitness
 content: T﻿his is a test
 ---
-Hi my name is Nola. I am a certified BCRPA personal trainer, former OrangeTheory Fitness Coach and Healthy Heart Instructor, specializing in working with the older adult community.
+Hi, my name is Nola. I am a certified BCRPA personal trainer, former OrangeTheory Fitness Coach and Healthy Heart Instructor, and I specialize in working with the older adult community.
 
-I have taught a number of classes from HIIT, core conditioning, boot camps, aqua fit, spin, to chair exercises. Fitness is a big part of my life and I love to share my passion with anyone that will come.
+I have been personal training for 8 years working with all types of fitness levels, athletes, persons of disabilities, post-partum mothers, and even people recovering from injuries and illnesses.
 
-As a mama of four, I know how hard it can be to get back into shape. Balancing work, and the home all the while taking care of the people in your life. The struggle is real. My passion is to see people make fitness and exercise a part of their everyday life and to make it simple.
+I have taught a number of classes from HIIT, core conditioning, boot camps, aqua fit, spin, to chair exercises. Fitness is a big part of my life and I love to share my passion with everyone.
 
-I have witnessed client after client reach great achievements. And I want you to be the next!
+Balancing work and home life are challenging. My goal is to help you incorporate exercise into your daily life. Whether it is going hard at the gym for muscle gains or exercises to keep you mobile and limber. I can help you achieve your goals and give you the knowledge to add fitness into your daily routine with take-home exercises that you can do anytime, anywhere. As a mother of four, I understand how busy life can be.
+
+**Clients come to Vitality Fitness and get results.**
+
+Vitality Fitness is located in the heart of Willoughby, a community in Langley, BC.
+
+(﻿Map Image)
