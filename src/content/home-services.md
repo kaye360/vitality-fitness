@@ -1,4 +1,5 @@
 ---
+title: Home - Services
 ---
 Vitality Fitness has three ways to join for your convenience. You can pay per session, buy a package of 5 sessions, or a package of 10 sessions.
 
