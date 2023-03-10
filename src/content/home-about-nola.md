@@ -1,4 +1,5 @@
 ---
+title: Home - About Nola
 ---
 ### TRAIN WITH NOLA
 Nola is a certified BCRPA personal trainer, former OrangeTheory Fitness Coach, and Healthy Heart Instructor who specializes in working with the older adult community.
