@@ -1,6 +1,5 @@
 ---
 title: About Vitality Fitness
-content: T﻿his is a test
 ---
 Hi my name is Nola. I am a certified BCRPA personal trainer, former OrangeTheory Fitness Coach and Healthy Heart Instructor, specializing in working with the older adult community.
 
