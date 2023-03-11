@@ -7,8 +7,8 @@ const { title } = Astro.props
 ---
 
 
-<div class="relative py-20 text-4xl font-semibold text-primary-400 bg-black bg-opacity-80">
-    <h1 class="relative w-fit mx-auto">
+<div class="relative py-20 text-4xl font-semibold bg-black bg-opacity-80">
+    <h1 class="relative w-fit mx-auto text-primary-50">
         {title}
     </h1>
 </div>
@@ -30,7 +30,7 @@ h1::before {
     position: absolute;
     left : 0;
     bottom : -10px;
-    width : 40%;
+    width : 25%;
     height : 5px;
     background-color: hsl( var(--color-primary-500) );
 }

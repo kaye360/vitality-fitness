@@ -2,11 +2,13 @@
 import BaseLayout from "../layouts/BaseLayout.astro";
 import * as content from '../content/about.md'
 import { Content } from '../content/about.md'
+import "../../public/css/main.css"
+import PageHeading from "../components/PageHeading.astro";
 ---
 
 <BaseLayout>
 
-	<h1>{content.frontmatter.title}</h1>
+	<PageHeading title={content.frontmatter.title} />
 
 	<Content />
 

@@ -1,9 +1,13 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import "../../public/css/main.css"
+import * as content from "../content/contact.md"
+import PageHeading from "../components/PageHeading.astro";
 ---
 
 <BaseLayout>
 
-	<h1>Contact</h1>
+	<PageHeading title={content.frontmatter.title} />
+
 
 </BaseLayout>
