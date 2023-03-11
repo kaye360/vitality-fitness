@@ -1,0 +1,13 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import * as content from '../content/facility.md'
+import { Content } from '../content/facility.md'
+---
+
+<BaseLayout>
+
+	<h1>{content.frontmatter.title}</h1>
+
+	<Content />
+
+</BaseLayout>
