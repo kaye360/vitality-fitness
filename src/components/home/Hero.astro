@@ -1,0 +1,60 @@
+---
+import { Content as Headline } from "../../content/pages/home-headline.md"
+import { Content as SubHeadline } from "../../content/pages/home-sub-headline.md"
+---
+
+<section class="relative bg-black">
+    <div class="absolute inset-0 flex justify-center items-start flex-col gap-8 px-8 text-primary-100 gradient">
+
+        <h1 class="text-5xl font-theme max-w-[12ch] leading-[3.5rem]">
+            <Headline />
+        </h1>
+
+        <span class="text-xl font-semibold">
+            <SubHeadline />
+        </span>
+
+        <div>
+            <a href="/book-consult" class="bg-primary-500 text-primary-900">
+                Book A Consult
+            </a>
+    
+            <a href="/about" class="text-primary-500">
+                About Vitality Fitness
+            </a>
+        </div>
+
+        <img src="/img/bcrpa-icon-grey.png" />
+
+    </div>
+</section>
+
+
+<style>
+    section {
+        min-height: calc(100vh - 4rem);
+        background-color: black;
+        background-image : url(/img/hero.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: left 150px center;
+        border-radius: 10px;
+        overflow: hidden;
+    }
+
+    .gradient {
+        background: linear-gradient(
+            90deg,
+            black 30%,
+            transparent 200%
+        );
+    }
+
+    a {
+        display : inline-block;
+        padding : 0.5rem 1rem;
+        font-weight : 600;
+        font-size: 1.2rem;
+        border-radius: 5px;
+    }
+</style> 

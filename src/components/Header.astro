@@ -4,12 +4,16 @@
 
 <div class="px-4 w-full max-w-7xl mx-auto">
 
-    <nav class="relative z-[99999] flex justify-between items-center px-4 h-16 mx-auto bg-primary-50">
+    <nav class="relative z-[99999] flex justify-between items-center px-4 h-16 mx-auto text-primary-50">
         
-        <div class="flex items-center gap-4 text-2xl font-theme uppercase tracking-widest">
-            <img src="/img/logo.png" alt="Logo" class="translate-y-6 -rotate-6">
-            Vitality Fitness
-        </div>
+        <a href="/">
+            <div class="flex items-center gap-4 text-xl font-bold italic uppercase tracking-widest">
+                <img src="/img/logo.png" alt="Logo" class="translate-y-6 -rotate-6">
+                <span>
+                    <span class="text-primary-500">Vitality</span><span>Fitness</span>
+                </span>
+            </div>
+        </a>
         
         <ul class="flex items-center gap-4 font-medium text-md">
             <li><a href="/">Home</a></li>
@@ -17,8 +21,10 @@
             <li><a href="/services">Services</a></li>
             <li><a href="/about">About</a></li>
             <li><a href="/contact">Contact</a></li>
-            <li><a href="/book-consult">Book Consult</a></li>
-            <li><a href="https://www.facebook.com/VFpersonaltrainer" target="_blank">FB</a></li>
+            <li><a href="/book-consult" class="px-4 py-2 text-primary-500 border border-primary-500">Book Consult</a></li>
+            <li><a href="https://www.facebook.com/VFpersonaltrainer" target="_blank">
+                <img src="/img/social-icon-facebook.png" />
+            </a></li>
         </ul>
         
     </nav>
@@ -26,7 +32,14 @@
 
 
 <style>
-    a:hover {
+    a {
+        border-radius: 5px;
+        transition : all 250ms ease-in-out;
+    }
+    li a:hover {
         text-decoration: underline;
+    }
+    a:hover div img { 
+        
     }
 </style>
