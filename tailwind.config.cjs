@@ -16,6 +16,9 @@ module.exports = {
 					800: 'hsl(var(--color-primary-800) / <alpha-value>)',
 					900: 'hsl(var(--color-primary-900) / <alpha-value>)',
 				}
+			},
+			fontFamily: {
+				'theme' : ['Gunplay', 'ui-sans-serif', 'system-ui', 'Roboto', "Helvetica", 'Arial', 'sans-serif']
 			}
 		},
 	},
