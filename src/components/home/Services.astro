@@ -1,11 +1,36 @@
 ---
 import { Content } from "../../content/pages/home-services.md"
+import SectionHeading from "./SectionHeading.astro";
 ---
 
-<section class="bg-white">
+<section class="grid grid-cols-[300px_1fr] items-start px-8 py-16 bg-secondary-900 text-secondary-50">
 
-    <h2>Services</h2>
+    <SectionHeading title="Services" />
 
-    <Content />
+    <div class="flex flex-col gap-8 items-start max-w-[70ch]">
+
+        <Content />
+
+        <a href="/services" class="inline-block px-4 py-2 border border-primary-500 text-primary-400 hover:border-secondary-400 hover:text-secondary-400">
+            More Info
+        </a>
+
+        <div class="grid grid-cols-2 w-fit gap-4">
+            <img src="/img/nola-wheelchair.jpg" />
+            <img src="/img/woman-weight.jpg" />
+        </div>
+
+    </div>
 
 </section>
+
+<style>
+
+section {
+    background-image: url(/img/kettlebell-bg.svg);
+    background-repeat : no-repeat;
+    background-size: 40%;
+    background-position: left 50px bottom;
+}
+
+</style>

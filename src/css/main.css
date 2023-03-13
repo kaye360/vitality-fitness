@@ -16,6 +16,17 @@
         --color-primary-700 : 19 99% 30%;
         --color-primary-800 : 19 99% 20%;
         --color-primary-900 : 19 99% 10%;
+
+        --color-secondary-50  : 208 27% 95%;
+        --color-secondary-100 : 208 27% 90%;
+        --color-secondary-200 : 208 27% 80%;
+        --color-secondary-300 : 208 27% 70%;
+        --color-secondary-400 : 208 27% 60%;
+        --color-secondary-500 : 208 27% 50%;
+        --color-secondary-600 : 208 27% 40%;
+        --color-secondary-700 : 208 27% 30%;
+        --color-secondary-800 : 208 27% 20%;
+        --color-secondary-900 : 208 27% 10%;
     }
 
     @font-face {

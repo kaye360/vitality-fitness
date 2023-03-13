@@ -1,0 +1,65 @@
+---
+import { Content as AboutNola } from "../../content/pages/home-about-nola.md"
+import { Content as AboutFacility } from "../../content/pages/home-about-facility.md"
+import SectionHeading from "./SectionHeading.astro";
+---
+
+<section class="px-8 py-16 bg-secondary-100">
+
+    <SectionHeading title="About Vitality Fitness" class="mx-auto mb-16" />
+
+    <div class="grid grid-cols-2 gap-y-20 max-w-4xl mx-auto">
+
+        <img src="/img/nola-kettlebell-pose.jpg" />
+
+        <div class="p-6 home-about-content-block z-10">
+            <AboutNola />
+        </div>
+
+        <div class="p-6 home-about-content-block z-10">
+
+            <AboutFacility />
+            
+            <a href="/about" class="inline-block px-4 py-2 border border-primary-500 text-primary-500 hover:border-secondary-500 hover:text-secondary-500">
+                Learn More
+            </a>
+
+        </div>
+
+        <img src="/img/gym-home-about.jpg" />
+
+    </div>
+
+    <div class="inspiration pt-24 text-center text-secondary-300 uppercase font-semibold">
+        I can and I will. Watch Me.
+    </div>
+
+</section>
+
+
+
+<style>
+
+.home-about-content-block {
+    display : flex;
+    flex-direction: column;
+    align-items: start;
+    gap : 1rem;
+    outline : 8px solid hsl(var(--color-secondary-200));
+    outline-offset: 1rem;
+}
+
+.inspiration {
+    font-size: min(5.5vw, 4rem);
+}
+
+</style>
+
+<style is:inline>
+    
+.home-about-content-block h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+    
+</style>

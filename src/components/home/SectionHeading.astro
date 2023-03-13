@@ -1,0 +1,26 @@
+---
+import { AstroTimer } from "astro/dist/core/config/timer";
+
+interface Props {
+    title: string
+    class?: string
+}
+const { title, class: className } = Astro.props
+---
+
+
+<h2 class={`relative w-fit uppercase text-5xl font-semibold ${className}`}>
+    {title}
+</h2>
+
+<style>
+    h2::after {
+        content : '';
+        position: absolute;
+        bottom : -10px;
+        left : 0;
+        width : 20%;
+        height : 6px;
+        background-color: hsl( var(--color-primary-500) );
+    }
+</style>
