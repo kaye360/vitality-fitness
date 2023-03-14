@@ -1,13 +1,62 @@
 ---
 import SectionHeading from "./SectionHeading.astro";
 import { Content } from "../../content/pages/home-testimonials.md"
+
+const gridImg: string = "object-cover aspect-square"
 ---
 
-<section class="flex flex-col gap-12 bg-secondary-900 p-8 text-center text-secondary-100">
+<section class="testimonials flex flex-col items-start gap-12 bg-secondary-900 px-8 py-20 text-secondary-100 max-w-">
 
-    <SectionHeading title="Are you ready to take the next step?" class="mx-auto" />
+    <SectionHeading title="Are you ready to take the next step?" />
 
-    <Content />
+    <div class="grid grid-cols-2 gap-4">
+        <Content />
+    </div>
 
+    <a href="/book-consult" class="inline-block px-4 py-2 bg-primary-500 text-primary-900 font-bold rounded">
+        Book your free consult today!
+    </a>
+
+    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 items-stretch">
+        <img src="/img/img-grid-1.jpg" class={gridImg} alt="Nola and Client training" />
+        <img src="/img/img-grid-2.jpg" class={gridImg} alt="Nola and Client training" />
+        <img src="/img/img-grid-3.jpg" class={gridImg} alt="Nola and Client training" />
+        <img src="/img/img-grid-4.jpg" class={gridImg} alt="Nola and Client training" />
+        <img src="/img/img-grid-5.jpg" class={gridImg} alt="Nola and Client training" />
+        <img src="/img/img-grid-6.jpg" class={gridImg} alt="Nola and Client training" />
+    </div>
 
 </section>
+
+
+<style is:inline>
+
+.testimonials blockquote {
+    max-width: 36rem;
+    position: relative;
+    padding: 1rem 4rem 1rem 1rem;
+    border-radius: 5px;
+    background-color: hsl(var(--color-secondary-800));
+}
+
+.testimonials blockquote::after {
+    content : "”";
+    position: absolute;
+    top : 30%;
+    right : 1rem;
+    font-size : 6rem;
+    font-family: Helvetica, Arial, sans-serif;
+    color : hsl(var(--color-secondary-900));
+}
+
+img:first-child {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+img:last-child {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+</style>
