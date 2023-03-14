@@ -1,8 +1,6 @@
 ---
 title: Home - Testomonials
 ---
-## ARE YOU READY TO TAKE THE NEXT STEP?
-
 Nola is starting to push me harder, i feel better … I feel more determined than ever!
 
 – Nathan S
