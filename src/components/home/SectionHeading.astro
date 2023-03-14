@@ -9,7 +9,7 @@ const { title, class: className } = Astro.props
 ---
 
 
-<h2 class={`relative w-fit uppercase text-5xl font-semibold ${className}`}>
+<h2 class={`relative w-fit uppercase text-5xl font-semibold ${className || ''}`}>
     {title}
 </h2>
 

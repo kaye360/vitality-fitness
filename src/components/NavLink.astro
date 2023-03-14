@@ -1,0 +1,30 @@
+---
+interface Props {
+    to: string,
+    activePage?: string,
+    name?: string,
+    isCta?: boolean,
+    isExternal?: boolean
+}
+const { to, activePage, name, isCta = false, isExternal = false } = Astro.props
+---
+
+<li>
+
+    <a
+        href={to}
+
+        class={` ${ isCta
+            ? 'px-4 py-2 text-primary-500 border border-primary-500'
+            : name === activePage
+                ? 'text-primary-500'
+                : '' } 
+            hover:underline 
+        `}
+        
+        target={ isExternal ? '_blank' : '_self'}
+    >
+        <slot />
+    </a>
+
+</li>

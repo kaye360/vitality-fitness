@@ -1,7 +1,11 @@
 ---
+interface Props {
+	activePage: string
+}
 import Footer from "../components/Footer.astro";
 import Header from "../components/Header.astro";
 import '../css/main.css'
+const { activePage } = Astro.props
 ---
 
 
@@ -16,9 +20,9 @@ import '../css/main.css'
 	</head>
 	<body class=" bg-[#111] text-lg">
 
-        <Header />
+        <Header activePage={activePage} />
 
-        <main class="w-full max-w-7xl mx-auto">
+        <main class={`w-full max-w-7xl mx-auto`}>
 
             <slot />
 

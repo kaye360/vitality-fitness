@@ -1,9 +1,14 @@
 ---
+import NavLink from './NavLink.astro';
 
+interface Props {
+    activePage: string
+}
+const { activePage } = Astro.props
 ---
 
 
-<nav id="top" class="relative z-[99999] flex justify-between items-center px-4 w-full max-w-7xl h-16 mx-auto text-primary-50">
+<nav id="top" class="relative z-[99999] flex justify-between items-center px-4 w-full max-w-7xl h-20 mx-auto text-primary-50">
     
     <a href="/">
         <div class="flex items-center gap-4 text-xl font-bold italic uppercase tracking-widest">
@@ -15,29 +20,34 @@
     </a>
     
     <ul class="flex items-center gap-4 font-medium text-md">
-        <li><a href="/">Home</a></li>
-        <li><a href="/facility">Facility</a></li>
-        <li><a href="/services">Services</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <li><a href="/book-consult" class="px-4 py-2 text-primary-500 border border-primary-500">Book Consult</a></li>
-        <li><a href="https://www.facebook.com/VFpersonaltrainer" target="_blank">
+        
+        <NavLink to="/" name="home" activePage={activePage}>
+            Home
+        </NavLink>
+
+        <NavLink to="/facility" name="facility" activePage={activePage}>
+            Facility
+        </NavLink>
+
+        <NavLink to="/services" name="services" activePage={activePage}>
+            Services
+        </NavLink>
+
+        <NavLink to="/about" name="about" activePage={activePage}>
+            About
+        </NavLink>
+
+        <NavLink to="/contact" name="contact" activePage={activePage}>
+            Contact
+        </NavLink>
+
+        <NavLink to="/book-consult" name="book-consult" activePage={activePage} isCta={true}>
+            Book Consult
+        </NavLink>
+
+        <NavLink to="https://www.facebook.com/VFpersonaltrainer" isExternal={true}>
             <img src="/img/social-icon-facebook.png" />
-        </a></li>
+        </NavLink>
     </ul>
     
 </nav>
-
-
-<style>
-    a {
-        border-radius: 5px;
-        transition : all 250ms ease-in-out;
-    }
-    li a:hover {
-        text-decoration: underline;
-    }
-    a:hover div img { 
-        
-    }
-</style>

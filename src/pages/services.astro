@@ -1,11 +1,17 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
 import * as content from  "../content/pages/services.md"
+import { Content } from  "../content/pages/services.md"
 import PageHeading from "../components/PageHeading.astro";
+import ContentWrapper from "../components/ContentWrapper.astro";
 ---
 
-<BaseLayout>
+<BaseLayout activePage="services">
 
 	<PageHeading title={content.frontmatter.title} />
+
+	<ContentWrapper>
+		<Content />
+	</ContentWrapper>
 
 </BaseLayout>
