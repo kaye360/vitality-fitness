@@ -13,7 +13,7 @@ const { activePage } = Astro.props
     <a href="/">
         <div class="flex items-center gap-4 text-xl font-bold italic uppercase tracking-widest">
             <img src="/img/logo.png" alt="Logo" class="translate-y-6 -rotate-6">
-            <span>
+            <span class="relative">
                 <span class="text-primary-500">Vitality</span><span>Fitness</span>
             </span>
         </div>
@@ -51,3 +51,32 @@ const { activePage } = Astro.props
     </ul>
     
 </nav>
+
+<style>
+
+a>div>span::before {
+    content : '';
+    position : absolute;
+    bottom : 0;
+    left : 0;
+    width : 0%;
+    height : 3px;
+    background: hsl(var(--color-primary-500));
+    transition: all 250ms ease-in-out;
+}
+
+a>div>span::after {
+    content : '';
+    position : absolute;
+    bottom : -5px;
+    right : 0;
+    width : 0%;
+    height : 3px;
+    background: hsl(var(--color-primary-100));
+    transition: all 250ms ease-in-out;
+}
+
+a:hover>div>span::before, a:hover>div>span::after {
+    width : 60%;
+}
+</style>

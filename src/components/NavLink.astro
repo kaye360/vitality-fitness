@@ -7,6 +7,9 @@ interface Props {
     isExternal?: boolean
 }
 const { to, activePage, name, isCta = false, isExternal = false } = Astro.props
+
+const isActiveLink: boolean = name === activePage
+
 ---
 
 <li>
@@ -14,14 +17,16 @@ const { to, activePage, name, isCta = false, isExternal = false } = Astro.props
     <a
         href={to}
 
-        class={` ${ isCta
-            ? 'px-4 py-2 text-primary-500 border border-primary-500'
-            : name === activePage
+        class={` 
+            ${ isCta
+                ? 'px-4 py-2 text-primary-500 border border-primary-500'
+                : '' }
+            ${ isActiveLink
                 ? 'text-primary-500'
                 : '' } 
             hover:underline 
         `}
-        
+
         target={ isExternal ? '_blank' : '_self'}
     >
         <slot />
