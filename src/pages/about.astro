@@ -4,6 +4,7 @@ import PageHeading from "../components/PageHeading.astro";
 import * as content from '../content/pages/about.md'
 import { Content } from '../content/pages/about.md'
 import ContentWrapper from "../components/ContentWrapper.astro";
+import Markdown from "../components/Markdown.astro";
 ---
 
 <BaseLayout activePage="about">
@@ -11,7 +12,9 @@ import ContentWrapper from "../components/ContentWrapper.astro";
 	<PageHeading title={content.frontmatter.title} />
 
 	<ContentWrapper>
-		<Content />
+		<Markdown class="max-w-xl mx-auto">
+			<Content />
+		</Markdown>
 	</ContentWrapper>
 
 </BaseLayout>
