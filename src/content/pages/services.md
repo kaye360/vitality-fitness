@@ -1,6 +1,20 @@
 ---
 title: Services and Fitness Packages
 ---
+# h﻿1 heading
+
+## h﻿2 heading
+
+### h﻿3 heading
+
+#### h﻿4 heading
+
+##### h﻿5 heading
+
+###### h﻿6 heading
+
+
+
 **No hidden fees.**
 
 Vitality Fitness has three ways to join for your convenience:
