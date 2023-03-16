@@ -4,6 +4,7 @@ import * as content from  "../content/pages/services.md"
 import { Content } from  "../content/pages/services.md"
 import PageHeading from "../components/PageHeading.astro";
 import ContentWrapper from "../components/ContentWrapper.astro";
+import Markdown from "../components/Markdown.astro";
 ---
 
 <BaseLayout activePage="services">
@@ -11,7 +12,9 @@ import ContentWrapper from "../components/ContentWrapper.astro";
 	<PageHeading title={content.frontmatter.title} />
 
 	<ContentWrapper>
-		<Content />
+		<Markdown>
+			<Content />
+		</Markdown>
 	</ContentWrapper>
 
 </BaseLayout>
