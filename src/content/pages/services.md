@@ -1,13 +1,11 @@
 ---
 title: Services and Fitness Packages
 ---
-
-No hidden fees.
+**No hidden fees.**
 
 Vitality Fitness has three ways to join for your convenience:
 
-
-Pay per session<
+Pay per session
 
 $80 + GST
 
@@ -31,7 +29,7 @@ Packages are paid upfront on assessment day. You are in control. You set the rul
 
 Most clients come to train 2 to 3 times per week and have great success. Others choose to purchase a package of personal training sessions, learn the program, and then take it to the gym of their choice. 
 
-*Note: A minimum of 24 hours' notice is required to cancel your session.
+\*Note: A minimum of 24 hours' notice is required to cancel your session.
 
 Online Coaching
 
